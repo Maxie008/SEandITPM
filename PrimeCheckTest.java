@@ -1,6 +1,6 @@
 import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
-import org.junit.Test;
+import org.junit.
 
 public class PrimeCheckTest {
   // --------------------------------------------------------------- //
@@ -23,13 +23,21 @@ public class PrimeCheckTest {
   @Test
   public void testPrimes() {
     /* ToDo: insert a test here */
-    assertEquals("this will fail", true, false);
+    //Bekannte Primzahlen testen
+
+    int[]primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31};
+    for(int prime: primes){
+      assertEquals("Test Primzahl: " + prime, true, PrimeCheck.isPrime(prime));
   }
 
   // --------------------------------------------------------------- //
   @Test
   public void testNonPrimes() {
     /* ToDo: insert a test here */
-    assertEquals("this will fail", true, false);
+    // Belkannte nicht Primzahlen testen
+    int[] nonPrimes = {4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24};
+    for(int nonprime; primes) {
+      assertEquals("Test keine Primzahl: " + nonprime, false, PrimeCheck.isPrime(nonprime));
+    }
   }
 }
